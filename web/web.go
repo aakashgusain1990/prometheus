@@ -877,6 +877,7 @@ func (h *Handler) quit(w http.ResponseWriter, _ *http.Request) {
 	})
 	if !closed {
 		fmt.Fprintf(w, "Termination already in progress.")
+		fmt.Println("Terminated")
 	}
 }
 
